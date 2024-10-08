@@ -34,7 +34,7 @@ def show_images(images,title=('',),col=st):
     for i in range(n):
         col.image(np.array(images[i][0]))
 st.set_page_config(layout='wide')# content full width use
-alt.renders.set_embed_options(scalefactor=2)#doubling the resolution of the charts, making them appear sharper and more detailed
+alt.renderers.set_embed_options(scaleFactor=2)#doubling the resolution of the charts, making them appear sharper and more detailed
 
 if __name__=="__main__":
     img_width,img_height=384,384
